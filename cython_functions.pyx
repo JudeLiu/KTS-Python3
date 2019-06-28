@@ -17,7 +17,7 @@ def calculate_change_points(int m, int n,
                             np.ndarray[np.double_t, ndim=2] I, 
                             np.ndarray[np.double_t, ndim=2] J, 
                             int lmin, int lmax, 
-                            np.ndarray[int, ndim=2] p,
+                            np.ndarray[np.int64_t, ndim=2] p,
                             bint backtrack):
     cdef double c
     cdef int k, l, t
