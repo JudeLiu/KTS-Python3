@@ -54,9 +54,9 @@ def cpd_nonlin(K, ncp, lmin=1, lmax=100000, backtrack=True, verbose=True,
 
     if backtrack:
         # p[k, l] --- "previous change" --- best t[k] when t[k+1] equals l
-        p = np.zeros((m+1, n+1), dtype=int)
+        p = np.zeros((m+1, n+1), dtype=np.int32)
     else:
-        p = np.zeros((1,1), dtype=int)
+        p = np.zeros((1,1), dtype=np.int32)
         
     bt = int(1) if backtrack else int(0)
 
