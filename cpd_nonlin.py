@@ -1,6 +1,5 @@
 import numpy as np
-from cython_functions import calculate_scatters, calculate_change_points
-
+from .cython_functions import calculate_scatters, calculate_change_points
 
 def calc_scatters(K):
     """
